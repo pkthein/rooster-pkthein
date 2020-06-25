@@ -1,5 +1,5 @@
 <template>
-  <div class="row">
+  <div class="row q-mb-xl">
     <div class="col-12 col-sm-5 offset-sm-1 flex flex-center">
       <div class="q-px-xl q-py-xl q-my-xl" align="left">
         <div class="text-h6 text-bold">

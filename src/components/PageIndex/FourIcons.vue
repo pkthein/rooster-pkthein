@@ -5,7 +5,7 @@
     >
       <div class="q-px-xl q-my-xl" align="left">
         <div class="text-h5 text-bold">
-          {{ 'Lorem Ipsum'.toUpperCase() }}
+          {{ 'Lorem Ipsum Dolor Sit Amet'.toUpperCase() }}
         </div>
         <div class="q-mt-sm" style="font-size: 10px;">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
