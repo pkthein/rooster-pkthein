@@ -36,7 +36,7 @@ export default {
     salute: function () {
       this.$q.notify({
         type: 'positive',
-        message: 'Good click!',
+        message: 'Welcome from Rooster Grin Media =)',
         timeout: 2000
       })
     }
