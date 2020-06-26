@@ -18,7 +18,7 @@
         </div>
       </div>
     </div>
-    <div class="col-none col-md helping-hands-background">
+    <div class="col-md-6 helping-hands-background">
     </div>
   </div>
 </template>

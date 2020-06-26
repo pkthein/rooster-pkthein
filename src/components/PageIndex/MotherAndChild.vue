@@ -5,9 +5,9 @@
         <div class="head-md text-accent text-bold">
           Lorem Ipsum
         </div>
-        <div class="q-mt-sm">
+        <div>
           <q-btn
-            dense class="sharp" color="secondary"
+            dense class="sharp-resize" color="secondary"
             @click="linkedIn"
           >
             <span class="text-sm">

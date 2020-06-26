@@ -2,8 +2,10 @@
   <div class="row welcome-background">
     <div class="q-mt-sm col-2 offset-1" align="left">
       <img
+        class="cursor-pointer logo"
         src="~assets/logo-white.svg"
         alt="Rooster Grin White"
+        @click="roosterGrin"
       >
     </div>
 

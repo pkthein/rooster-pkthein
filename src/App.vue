@@ -12,7 +12,6 @@ export default {
 
 <style lang="stylus">
 * {
-  // font-family: Open Sans;
   font-size: 16px;
 }
 
@@ -21,7 +20,6 @@ export default {
   background-repeat: no-repeat;
   background-size: 100% 100%;
   width: 100%;
-  // height: 52vw;
   height: 100vh;
   min-height: 250px;
 }
@@ -30,11 +28,13 @@ export default {
   @extend .welcome-background;
   background-image: url('~assets/banner-1.jpg');
   height: 42vw;
+  min-height: 100px;
 }
 
 .happy-child-background {
   @extend .mother-child-background;
   background-image: url('~assets/banner-2.jpg');
+  vertical-align: middle;
 }
 
 .helping-hands-background {
@@ -47,6 +47,12 @@ button.sharp {
   border-radius: 0px;
   min-width: 150px;
   height: 55px;
+}
+
+button.sharp-resize {
+  @extend button.sharp;
+  min-width: clamp(100px, 20vw, 150px);
+  height: clamp(35px, 7vw, 55px);
 }
 
 .head-md {
@@ -65,7 +71,7 @@ button.sharp {
 }
 
 span.text-sm {
-  font-size: 15px;
+  font-size: clamp(10px, 1.5vw, 15px);
   padding: 0px 5px;
 }
 
@@ -73,6 +79,10 @@ b.clear-outline {
   color: #000;
   color: rgba(0, 0, 0, 0.0);
   -webkit-text-stroke: 2px white;
+}
+
+img.logo {
+  height: clamp(15px, 3vw, 30px);
 }
 
 .icon-border {

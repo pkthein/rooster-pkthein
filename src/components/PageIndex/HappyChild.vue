@@ -10,7 +10,7 @@
         </p>
         <div>
           <q-btn
-            dense class="sharp" color="secondary"
+            dense class="sharp-resize" color="secondary"
             @click="salute"
           >
             <span class="text-sm">
