@@ -8,12 +8,15 @@
     </div>
 
     <div class="full-width fade-in">
-      <b class="text-h3 text-bold clear-outline">
-        {{ 'Welcome To'.toUpperCase() }}
+      <b class="head-xl clear-outline">
+        Welcome To
       </b><br>
-      <b class="text-h4 text-white">Rooster Grin</b><br><br>
-      <q-btn dense class="sharp" color="accent">
-        <span class="text-small">
+      <b class="head-lg text-white">Rooster Grin</b><br><br>
+      <q-btn
+        dense class="sharp" color="accent"
+        @click="roosterGrin"
+      >
+        <span class="text-sm">
           button button
         </span>
       </q-btn>
@@ -27,6 +30,13 @@ export default {
 
   data () {
     return {
+    }
+  },
+
+  methods: {
+    roosterGrin: function () {
+      const path = 'https://www.roostergrin.com/'
+      window.open(path, '_blank', 'noopener')
     }
   }
 }

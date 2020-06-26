@@ -1,21 +1,21 @@
 <template>
   <div class="row q-mb-xl">
-    <div class="col-12 col-sm-5 offset-sm-1 flex flex-center">
+    <div class="col-12 col-md-5 offset-md-1 flex flex-center">
       <div class="q-px-xl q-py-xl q-my-xl" align="left">
-        <div class="text-h6 text-bold">
+        <div class="head-md text-bold">
           {{ 'Lorem Ipsum Dolor Sit Amet'.toUpperCase() }}
         </div>
         <div>
           <q-icon
             v-for="i in 5" :key="i"
             color="secondary" name="grade"
-            size="1em"
+            size="1.5em"
           />
         </div>
       </div>
     </div>
 
-    <div class="col-12 col-sm-6">
+    <div class="col-12 col-md-6">
       <q-carousel
         animated infinite autoplay arrows
         transition-prev="slide-right"

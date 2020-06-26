@@ -11,6 +11,11 @@ export default {
 </script>
 
 <style lang="stylus">
+* {
+  // font-family: Open Sans;
+  font-size: 16px;
+}
+
 .welcome-background {
   background-image: url('~assets/hero.jpg');
   background-repeat: no-repeat;
@@ -18,6 +23,7 @@ export default {
   width: 100%;
   // height: 52vw;
   height: 100vh;
+  min-height: 250px;
 }
 
 .mother-child-background {
@@ -39,18 +45,34 @@ export default {
 
 button.sharp {
   border-radius: 0px;
-  min-width: 100px;
+  min-width: 150px;
+  height: 55px;
 }
 
-span.text-small {
-  font-size: 8px;
+.head-md {
+  font-size: clamp(26px, 7vw, 40px);
+  text-transform: uppercase;
+}
+
+.head-lg {
+  font-size: clamp(32px, 7vw, 64px);
+}
+
+.head-xl {
+  @extend .head-md;
+  font-weight: 800;
+  font-size: clamp(36px, 7vw, 72px);
+}
+
+span.text-sm {
+  font-size: 15px;
   padding: 0px 5px;
 }
 
 b.clear-outline {
   color: #000;
   color: rgba(0, 0, 0, 0.0);
-  -webkit-text-stroke: 1px white;
+  -webkit-text-stroke: 2px white;
 }
 
 .icon-border {

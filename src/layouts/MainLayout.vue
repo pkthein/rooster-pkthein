@@ -15,7 +15,7 @@
         <q-icon
           class="cursor-pointer" :size="iconSize"
           name="img:icons/facebook.svg"
-          @click="goTo('https://www.facebook.com/')"
+          @click="goTo('https://www.facebook.com/RoosterGrin/')"
         />
       </div>
     </div>
@@ -37,7 +37,7 @@ export default {
 
   methods: {
     goTo: function (path) {
-      window.open(path, '_blank', 'noopener')
+      window.open(path, '_self', 'noopener')
     }
   }
 }
